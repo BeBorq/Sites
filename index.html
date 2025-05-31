@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wszystko o Plikach Cookies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="presentation-container">
+        <!-- Slajd 1: Tytułowy -->
+        <div class="slide active" id="slide-1">
+            <h1>Wszystko o Plikach Cookies (Ciasteczkach)</h1>
+        </div>
+
+        <!-- Slajd 2: Czym są Cookies? -->
+        <div class="slide" id="slide-2">
+            <h2>Czym są pliki cookies?</h2>
+            <p>Pliki cookies (ciasteczka) to małe pliki tekstowe, które strony internetowe zapisują na Twoim komputerze lub urządzeniu mobilnym, gdy je odwiedzasz.</p>
+            <p>Działają jak "pamięć" dla strony, pozwalając jej "zapamiętać" Cię i Twoje preferencje między wizytami.</p>
+            <p><strong>Metafora:</strong> Wyobraź sobie, że cookie to jak numerek w szatni – pozwala stronie Cię zidentyfikować przy następnej wizycie.</p>
+        </div>
+
+        <!-- Slajd 3: Jak Działają Cookies? -->
+        <div class="slide" id="slide-3">
+            <h2>Jak działają cookies?</h2>
+            <ol>
+                <li><strong>Wizyta na stronie:</strong> Odwiedzasz stronę WWW.</li>
+                <li><strong>Serwer wysyła cookie:</strong> Serwer strony wysyła mały plik cookie do Twojej przeglądarki.</li>
+                <li><strong>Przeglądarka zapisuje cookie:</strong> Twoja przeglądarka przechowuje ten plik.</li>
+                <li><strong>Kolejna wizyta:</strong> Gdy ponownie odwiedzasz tę samą stronę, Twoja przeglądarka odsyła zapisane cookie z powrotem do serwera.</li>
+                <li><strong>Serwer Cię "rozpoznaje":</strong> Dzięki temu strona wie, że to Ty i może np. utrzymać Cię zalogowanym lub wyświetlić spersonalizowane treści.</li>
+            </ol>
+
+        </div>
+
+        <!-- Slajd 4: Co zawiera Cookie? -->
+        <div class="slide" id="slide-4">
+            <h2>Co może zawierać plik cookie?</h2>
+            <ul>
+                <li><strong>Nazwa (Name):</strong> Identyfikator cookie (np. <code>userID</code>).</li>
+                <li><strong>Wartość (Value):</strong> Przechowywana informacja (np. <code>12345</code>, <code>theme=dark</code>).</li>
+                <li><strong>Data wygaśnięcia (Expires/Max-Age):</strong> Kiedy cookie przestaje być ważne.</li>
+                <li><strong>Domena (Domain):</strong> Dla jakiej strony cookie jest ważne (np. <code>example.com</code>).</li>
+                <li><strong>Ścieżka (Path):</strong> Dla jakiej części strony (np. <code>/</code>, <code>/blog</code>).</li>
+                <li><strong>Atrybuty bezpieczeństwa:</strong>
+                    <ul>
+                        <li><code>Secure</code>: Wysyłane tylko przez połączenie HTTPS.</li>
+                        <li><code>HttpOnly</code>: Niedostępne dla JavaScript po stronie klienta (chroni przed XSS).</li>
+                        <li><code>SameSite</code>: Kontroluje, kiedy cookie jest wysyłane z żądaniami cross-site (chroni przed CSRF).</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Slajd 5: Rodzaje Cookies cz. 1 -->
+        <div class="slide" id="slide-5">
+            <h2>Główne Rodzaje Cookies</h2>
+            <h3>Cookies Sesyjne (Session Cookies)</h3>
+            <ul>
+                <li>Działają tylko podczas jednej sesji przeglądania.</li>
+                <li>Usuwane po zamknięciu przeglądarki.</li>
+                <li><strong>Przykład:</strong> Utrzymanie zawartości koszyka w sklepie internetowym podczas jednej wizyty.</li>
+            </ul>
+            <h3>Cookies Trwałe (Persistent Cookies)</h3>
+            <ul>
+                <li>Pozostają na urządzeniu przez określony czas (np. 7 dni, rok) lub do ręcznego usunięcia.</li>
+                <li><strong>Przykład:</strong> Zapamiętanie preferencji językowych na stronie, opcja "nie wylogowuj mnie".</li>
+            </ul>
+        </div>
+
+        <!-- Slajd 6: Rodzaje Cookies cz. 2 -->
+        <div class="slide" id="slide-6">
+            <h2>Inne Ważne Rodzaje Cookies</h2>
+            <h3>Cookies Własne (First-party Cookies)</h3>
+            <p>Ustawiane i odczytywane przez domenę (stronę), którą bezpośrednio odwiedzasz.</p>
+            <p><strong>Przykład:</strong> Strona <code>mojastrona.pl</code> ustawia cookie, aby zapamiętać Twoje ustawienia na tej stronie.</p>
+
+            <h3>Cookies Stron Trzecich (Third-party Cookies)</h3>
+            <p>Ustawiane przez inną domenę niż ta, którą odwiedzasz. Zazwyczaj są to elementy osadzone na stronie, np. reklamy, przyciski mediów społecznościowych, skrypty analityczne.</p>
+            <p><strong>Przykład:</strong> Odwiedzasz <code>blog.com</code>, który wyświetla reklamę z serwisu <code>reklamy.net</code>. Serwis <code>reklamy.net</code> może ustawić cookie w Twojej przeglądarce.</p>
+            <p><em>To właśnie third-party cookies są często źródłem kontrowersji dotyczących prywatności i śledzenia użytkowników w internecie.</em></p>
+        </div>
+
+        <!-- Slajd 7: Do Czego Służą Cookies? -->
+        <div class="slide" id="slide-7">
+            <h2>Przykładowe Zastosowania Cookies</h2>
+            <ul>
+                <li><strong>Uwierzytelnianie:</strong> Utrzymanie zalogowania użytkownika (np. "Witaj, Jan!").</li>
+                <li><strong>Personalizacja:</strong> Zapamiętywanie preferencji (np. wybrany język, motyw kolorystyczny strony, układ elementów).</li>
+                <li><strong>E-commerce:</strong> Pamiętanie zawartości koszyka zakupów, listy życzeń, ostatnio oglądanych produktów.</li>
+                <li><strong>Analityka:</strong> Zbieranie anonimowych danych o tym, jak użytkownicy korzystają ze strony (np. które podstrony są najpopularniejsze, ile czasu spędzają na stronie - np. Google Analytics).</li>
+                <li><strong>Reklama:</strong> Targetowanie reklam na podstawie zainteresowań i historii przeglądania (np. jeśli oglądałeś buty, możesz później widzieć reklamy butów na innych stronach).</li>
+                <li><strong>Testy A/B:</strong> Pokazywanie różnym grupom użytkowników różnych wersji strony, aby sprawdzić, która działa lepiej.</li>
+            </ul>
+        </div>
+
+        <!-- Slajd 8: Cookies w JavaScript - Ustawianie -->
+        <div class="slide" id="slide-8">
+            <h2>Cookies w JavaScript: Ustawianie</h2>
+            <p>W JavaScript możemy zarządzać cookies za pomocą właściwości <code>document.cookie</code>.</p>
+            <p><strong>Aby ustawić cookie:</strong></p>
+            <pre><code class="language-javascript">
+// Proste cookie (sesyjne, ważne dla bieżącej ścieżki)
+document.cookie = "username=JanKowalski";
+
+// Cookie z datą wygaśnięcia (trwałe)
+let date = new Date();
+// Ustawienie daty wygaśnięcia na 7 dni od teraz
+date.setTime(date.getTime() + (7 * 24 * 60 * 60 * 1000));
+let expires = "expires=" + date.toUTCString();
+document.cookie = "theme=dark; " + expires + "; path=/";
+// path=/ oznacza, że cookie jest dostępne na całej domenie
+            </code></pre>
+            <div class="interactive-js">
+                <p><strong>Wypróbuj:</strong></p>
+                Nazwa cookie: <input type="text" id="cookieNameInput" value="mojeCookie">
+                Wartość cookie: <input type="text" id="cookieValueInput" value="test123">
+                <button onclick="setExampleCookie()">Ustaw Cookie</button>
+                <p id="setCookieFeedback" class="feedback-text"></p>
+            </div>
+        </div>
+
+        <!-- Slajd 9: Cookies w JavaScript - Odczyt i Usuwanie -->
+        <div class="slide" id="slide-9">
+            <h2>Cookies w JavaScript: Odczyt i Usuwanie</h2>
+            <p><strong>Odczytywanie <code>document.cookie</code>:</strong></p>
+            <p>Zwraca string ze wszystkimi cookies (np. <code>"username=JanKowalski; theme=dark"</code>), który trzeba sparsować, aby uzyskać konkretną wartość.</p>
+            <pre><code class="language-javascript">
+function getCookie(name) {
+    const cookies = document.cookie.split(';');
+    for (let cookie of cookies) {
+        const [cookieName, cookieValue] = cookie.trim().split('=');
+        if (cookieName === name) {
+            return cookieValue;
+        }
+    }
+    return null;
+}
+// Przykład użycia:
+// let user = getCookie("username");
+// console.log(user); // Wyświetli "JanKowalski" (jeśli ustawione)
+            </code></pre>
+            <p><strong>Usuwanie cookie:</strong></p>
+            <p>Aby usunąć cookie, należy ustawić jego datę wygaśnięcia na datę w przeszłości.</p>
+            <pre><code class="language-javascript">
+document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            </code></pre>
+             <div class="interactive-js">
+                <p><strong>Wypróbuj (dla 'mojeCookie' ustawionego na poprzednim slajdzie):</strong></p>
+                <button onclick="readExampleCookie()">Odczytaj 'mojeCookie'</button>
+                <button onclick="deleteExampleCookie()">Usuń 'mojeCookie'</button>
+                <p id="readDeleteCookieFeedback" class="feedback-text"></p>
+            </div>
+        </div>
+
+        <!-- Slajd 10: Prywatność i Bezpieczeństwo -->
+        <div class="slide" id="slide-10">
+            <h2>Cookies, Prywatność i Bezpieczeństwo</h2>
+            <ul>
+                <li><strong>Ryzyka:</strong>
+                    <ul>
+                        <li><u>Śledzenie między stronami (Cross-site tracking):</u> Głównie przez third-party cookies, pozwala firmom budować profile Twoich zainteresowań.</li>
+                        <li><u>Profilowanie:</u> Tworzenie szczegółowych profili użytkowników bez ich pełnej świadomości lub zgody.</li>
+                        <li><u>Kradzież sesji (Session Hijacking):</u> Jeśli cookies sesyjne nie są odpowiednio zabezpieczone (np. brak atrybutu `HttpOnly` lub `Secure`).</li>
+                    </ul>
+                </li>
+                <li><strong>RODO (GDPR) i ePrivacy:</strong>
+                    <ul>
+                        <li>Wymóg informowania użytkowników o używaniu cookies.</li>
+                        <li>Konieczność uzyskania wyraźnej zgody na cookies niebędące niezbędnymi (np. analityczne, marketingowe). Stąd popularne "bannery cookies".</li>
+                    </ul>
+                </li>
+                <li><strong>Jak chronić swoją prywatność?</strong>
+                    <ul>
+                        <li>Regularnie czyść cookies w przeglądarce.</li>
+                        <li>Korzystaj z ustawień przeglądarki do blokowania third-party cookies.</li>
+                        <li>Używaj rozszerzeń do przeglądarek (blokery trackerów, menedżery cookies).</li>
+                        <li>Korzystaj z trybu incognito/prywatnego (ogranicza zapisywanie cookies i historii).</li>
+                    </ul>
+                </li>
+                <li><strong>Atrybuty zwiększające bezpieczeństwo:</strong>
+                    <ul>
+                        <li><code>HttpOnly</code>: Chroni cookie przed dostępem przez JavaScript, co utrudnia ataki XSS.</li>
+                        <li><code>Secure</code>: Zapewnia, że cookie jest wysyłane tylko przez zaszyfrowane połączenie HTTPS.</li>
+                        <li><code>SameSite</code>: Pomaga chronić przed atakami CSRF (Cross-Site Request Forgery).</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Slajd 11: Podsumowanie -->
+        <div class="slide" id="slide-11">
+            <h2>Podsumowanie - Kluczowe Punkty</h2>
+            <ul>
+                <li>Cookies to małe pliki tekstowe przechowywane przez przeglądarkę, które pomagają stronom "pamiętać" użytkowników i ich preferencje.</li>
+                <li>Wyróżniamy cookies sesyjne (tymczasowe) i trwałe (długoterminowe), a także własne (first-party) i stron trzecich (third-party).</li>
+                <li>Służą do wielu celów: utrzymania logowania, personalizacji treści, działania koszyków w e-sklepach, analityki i targetowania reklam.</li>
+                <li>Zarządzanie cookies w JavaScript odbywa się przez <code>document.cookie</code>.</li>
+                <li>Istotne są kwestie prywatności (np. śledzenie) i bezpieczeństwa (np. atrybuty <code>HttpOnly</code>, <code>Secure</code>).</li>
+                <li>Przepisy takie jak RODO wymagają informowania i uzyskiwania zgody na użycie niektórych rodzajów cookies.</li>
+                <li>Warto świadomie zarządzać cookies w ustawieniach przeglądarki.</li>
+            </ul>
+        </div>
+
+        <!-- Slajd 12: Rozpoczęcie Quizu -->
+        <div class="slide" id="quiz-start-slide">
+            <h2>Czas na sprawdzenie wiedzy!</h2>
+            <p>Kliknij przycisk poniżej, aby rozpocząć krótki quiz o plikach cookies.</p>
+            <button id="start-quiz-btn" class="quiz-button">Zacznij Quiz!</button>
+        </div>
+
+        <!-- Slajd 13: Quiz -->
+        <div class="slide" id="quiz-container">
+            <div id="question-area">
+                <h3 id="question-text"></h3>
+                <ul id="options-list">
+                    <!-- Opcje odpowiedzi będą generowane przez JS -->
+                </ul>
+            </div>
+            <div id="feedback-area" class="feedback-text"></div>
+            <button id="next-question-btn" class="quiz-button" style="display:none;">Następne pytanie</button>
+        </div>
+
+        <!-- Slajd 14: Wyniki Quizu -->
+        <div class="slide" id="quiz-results-slide">
+            <h2>Twój Wynik Quizu:</h2>
+            <p><span id="score">0</span> / <span id="total-questions">0</span> poprawnych odpowiedzi.</p>
+            <p id="result-message"></p>
+            <button id="restart-presentation-btn" class="quiz-button">Zacznij od początku</button>
+        </div>
+    </div>
+
+    <div id="navigation-buttons">
+        <button id="prev-slide-btn">Poprzedni</button>
+        <button id="next-slide-btn">Następny</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
